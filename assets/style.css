@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body {
+
+    background-color: #fff;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+    background-color: #fff;
+    width: 40rem;
+    border-radius: 2rem;
+    box-shadow: 0 2.5rem 4rem 0 hsl(221, 100%, 96%);
+}
+
+.resultsBox {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border: none;
+    border-radius: 2rem;
+    color: hsl(241, 100%, 89%);
+    height: 45vh;
+    padding: 2rem 2rem 3rem 2rem;
+    text-align: center;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resultsTitle {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.resultBox {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.result {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.resultContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.resultContent h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.resultContent p {
+    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 16px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18rem;
+    height: 45vh;
+    color: black;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.summaryTitle {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 0.127);
+    color: hsl(0, 100%, 67%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.115);
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.111);
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.092);
+    color: hsl(234, 85%, 45%);
+}
+
+.categoryCard {
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.categoryCard h1 {
+    font-weight: 700;
+}
+
+.iconCard {
+    width: 22px;
+}
+
+.card p {
+    color: black;
+    padding-right: 1rem;
+}
+
+.btn {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 1.5rem;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(241, 81%, 54%);
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+footer p, a {
+    font-size: 12px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 110vh;
+        /* padding: 2rem; */
+    }
+
+    .box {
+        flex-direction: column;
+        /* width: 22rem; */
+    }
+
+    .resultsBox {
+        height: 40vh;
+        justify-content: space-evenly;
+    }
+
+    .summary {
+        height: 50vh;
+    }
+
+}
